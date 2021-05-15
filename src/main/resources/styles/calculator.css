@@ -1,0 +1,142 @@
+.title-bar-btn {
+	-fx-padding: 0 0 5 0;
+	-fx-background-color: 
+		linear-gradient(from 0% 93% to 0% 100%, #a81717 0%, #891212 100%),
+        #891212,
+        #a81717,
+        radial-gradient(center 50% 50%, radius 100%, #f11c1c, #e71515);
+	-fx-background-radius: 25px;
+	-fx-background-insets: 0, 0 0 5 0, 0 0 5 0, 0 0 5 0;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+	-fx-font-weight: bold;
+    -fx-font-size: 1.5em;
+}
+
+.title-bar-btn:hover {
+	-fx-background-color: 
+		linear-gradient(from 0% 93% to 0% 100%, #a81717 0%, #891212 100%),
+        #891212,
+        #a81717,
+        radial-gradient(center 50% 50%, radius 100%, #fb1010, #6b6868);
+}
+
+.title-bar-btn:pressed {
+	-fx-padding: 0 0 0 0;
+    -fx-background-insets: 2 0 0 0, 2 0 3 0, 2 0 3 0, 2 0 3 0;
+}
+
+.root {
+	-fx-background-color: #e0d4df;
+	-fx-background-radius: 20px;
+	-fx-background-insets: 1px;
+	
+	-fx-border-color: black;
+	-fx-border-width: 2px;
+	-fx-border-radius: 20px;
+}
+
+.label1 {
+	-fx-border-color: black;
+	-fx-background-color: #7f8c8d;
+	-fx-background-radius: 10px;
+	-fx-border-radius: 10px;
+	-fx-border-width: 2 2 2 2;
+}
+
+.label-style {
+	-fx-border-color: black;
+	-fx-background-color: #7f8c8d;
+	-fx-background-radius: 10px;
+	-fx-border-radius: 10px;
+	-fx-border-width: 2 2 2 2;
+}
+
+.numeric-btn Text {
+	-fx-effect: dropshadow( one-pass-box , white , 0, 0.0 , 0 , 1 );
+}
+
+.numeric-btn {
+	-fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#b9b9b9 0%, #c2c2c2 20%, #afafaf 80%, #c8c8c8 100%),
+        linear-gradient(#f5f5f5 0%, #dbdbdb 50%, #cacaca 51%, #d7d7d7 100%);
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 15 30 15 30;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+
+.numeric-btn:hover {
+	-fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+    -fx-background-insets: 0,1,4,5,6;
+    -fx-background-radius: 9,8,5,4,3;
+    -fx-padding: 15 30 15 30;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+
+.numeric-btn:pressed {
+	-fx-background-insets: 0,1,9,5,6;
+    -fx-background-radius: 9,8,5,4,3;
+    -fx-padding: 15 30 15 30;
+}
+
+.operator-btn Text {
+	-fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
+
+.operator-btn {
+	-fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.9em;
+}
+
+.operator-btn:hover {
+	-fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+}
+
+.operator-btn:pressed {
+	-fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.reset-del-ans-btn {
+	-fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-background-radius: 30;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+
+.reset-del-ans-btn:hover {
+	-fx-background-color: linear-gradient(#c9153b, #d80f3a);
+}
+
+.reset-del-ans-btn:pressed {
+	-fx-background-insets: 2px;
+}
